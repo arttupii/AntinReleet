@@ -202,7 +202,7 @@ void setDim(unsigned char dim) {
 
 void menuRele0(){
   const int relay = 0;
-  lcdPrint(0,"RELE0        %s", getAndUpdateRelayState(relay)?"ON":"OFF");
+  lcdPrint(0,"Varoitusvalo %s", getAndUpdateRelayState(relay)?"ON":"OFF");
   lcdPrint(1,"              ");
 
   if(rotateMenuAndGetKey()&KEY_ENTER) {
@@ -212,7 +212,7 @@ void menuRele0(){
 
 void menuRele1(){
   const int relay = 1;
-  lcdPrint(0,"RELE1        %s", getAndUpdateRelayState(relay)?"ON ":"OFF");
+  lcdPrint(0,"Koristevalo  %s", getAndUpdateRelayState(relay)?"ON ":"OFF");
   lcdPrint(1,"              ");
   
   if(rotateMenuAndGetKey()&KEY_ENTER) {
@@ -222,7 +222,7 @@ void menuRele1(){
 
 void menuRele2(){
   const int relay = 2;
-  lcdPrint(0,"RELE2        %s", getAndUpdateRelayState(relay)?"ON ":"OFF");
+  lcdPrint(0,"Lisavalot    %s", getAndUpdateRelayState(relay)?"ON ":"OFF");
   lcdPrint(1,"              ");
   
   if(rotateMenuAndGetKey()&KEY_ENTER) {
